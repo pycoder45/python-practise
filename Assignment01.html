@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.1/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    .ft{
+      font-family: 'Montserrat', sans-serif;
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="ft">5. Write A Python program to find the reverse number of the given number </p>
+  <pre>
+    <code class="python">
+num = 38337478
+reverse_num = 0
+
+while num != 0: 
+  digit = num%10
+  reverse_num = reverse_num*10 + digit
+  num//=10
+  
+print("Reversed Number : ",reverse_num)
+    </code>
+  </pre>
+  <p class="ft"> 6. Write A python program to check whether the number is prime or not
+  </p>
+  <pre>
+    <code class="python">
+num = 28
+check_p = False
+
+if num > 1:
+    for i in range(2, num):
+        if (num % i) == 0:
+            check_p = True
+            break
+if check_p:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
+  
+    </code>
+  </pre>
+  
+<p class="ft">7. Write A Python Program to print 1st 10 odd and even Number.
+</p>
+<pre>
+  <code class="python">
+print(" Even \t\t Odd ")
+
+for i in range(0,20): 
+  if i%2 == 0: 
+    print(i,"\t\t ")
+  else : 
+    print(i)
+  </code>
+</pre>
+
+<p class="ft">8. Write A python program to find greatest and smallest number of given 3 Number 
+</p>
+<pre>
+  <code class="python">
+num1 = 45
+num2 = 87
+num3 = 23
+
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print("The largest number is", largest)
+
+if (num1 <= num2) and (num1 <= num3):
+   smallest = num1
+elif (num2 <= num1) and (num2 <= num3):
+   smallest = num2
+else:
+   smallest = num1
+
+print("The largest number is", smallest)
+  </code>
+</pre>
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.0/build/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
+</html>
